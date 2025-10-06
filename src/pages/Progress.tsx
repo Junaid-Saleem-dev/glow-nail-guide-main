@@ -136,14 +136,14 @@ const Progress = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="gradient-gold rounded-2xl p-6 shadow-soft"
+          className="bg-orange-500 rounded-2xl p-6 shadow-soft text-white"
         >
-          <h3 className="font-heading text-xl font-semibold text-white mb-4">Achievements</h3>
+          <h3 className="font-heading text-xl font-semibold mb-4">Achievements</h3>
           <div className="grid grid-cols-3 gap-4">
             {['🏆', '⭐', '💎'].map((emoji, index) => (
               <div key={index} className="text-center">
                 <div className="text-4xl mb-2">{emoji}</div>
-                <div className="text-xs text-white/80">
+                <div className="text-xs text-white/90">
                   {index === 0 && 'First Scan'}
                   {index === 1 && '7 Day Streak'}
                   {index === 2 && 'Top Score'}
