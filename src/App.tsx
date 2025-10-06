@@ -16,6 +16,7 @@ import Notifications from "./pages/Notifications";
 import Achievements from "./pages/Achievements";
 import Help from "./pages/Help";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <AnimatePresence mode="wait">
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Navigate to="/onboarding" replace />} />
             <Route path="/onboarding" element={<Onboarding />} />
